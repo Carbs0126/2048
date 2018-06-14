@@ -1,23 +1,87 @@
+import java.text.SimpleDateFormat
+
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion '22.0.0'
+    compileSdkVersion 27
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
-        minSdkVersion 7
+        minSdkVersion 14
         targetSdkVersion 22
-        versionCode 25
-        versionName "1.1.9"
+        versionCode 20
+        versionName "2.0.0"
+        applicationId "cn.carbs.a2048"
     }
+
+    signingConfigs {
+        releaseConfig {
+            keyAlias '2048'
+            keyPassword 'wangchao'
+            storeFile file('2048.jks')
+            storePassword 'wangchao'
+        }
+    }
+
     buildTypes {
+        debug {
+            buildConfigField "String", "Build_Version_Time", "\"" + buildTime() + "\""
+            buildConfigField "boolean", "Formal", "" + rootProject.ext.Formal + ""
+            if (rootProject.ext.Formal) {
+                manifestPlaceholders = [app_dynamic_name: "@string/app_name"]
+            } else {
+                manifestPlaceholders = [app_dynamic_name: "@string/app_name_test"]
+            }
+        }
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            buildConfigField "String", "Build_Version_Time", "\"" + buildTime() + "\""
+            buildConfigField "boolean", "Formal", "" + rootProject.ext.Formal + ""
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+            if (rootProject.ext.Formal) {
+                manifestPlaceholders = [app_dynamic_name: "@string/app_name"]
+            } else {
+                manifestPlaceholders = [app_dynamic_name: "@string/app_name_test"]
+            }
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            if (rootProject.ext.Formal) {
+                outputFileName = "2048-release-${variant.name}-${variant.versionName}-" + buildTime() + ".apk"
+            } else {
+                outputFileName = "2048-test-${variant.name}-${variant.versionName}-" + buildTime() + ".apk"
+            }
         }
     }
 }
 
+def buildTime() {
+    def df = new SimpleDateFormat("yyyy-MMdd-HHmm")
+    df.setTimeZone(TimeZone.getDefault())
+    return df.format(new Date())
+}
+
 dependencies {
-    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:recyclerview-v7:27.0.2'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.7'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.alibaba:fastjson:1.1.67.android'
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.tencent.bugly:crashreport:latest.release'
 }

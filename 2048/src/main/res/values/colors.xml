@@ -4,4 +4,135 @@
     <color name="text_black">#776e65</color>
     <color name="text_brown">#d6cdc4</color>
     <color name="background">#faf8ef</color>
+
+
+
+    <color name="colorPrimaryDarkNormal">#363930</color>
+    <color name="colorPrimaryDarkPressed">#161910</color>
+    <color name="colorVoiceToast">#aa222222</color>
+    <color name="colorFab">#ff1d77ac</color>
+
+    <color name="colorWeatherCenterText">#ffffffff</color>
+    <color name="colorSettingsToolbar">#508aeb</color>
+    <color name="colorDefaultRipple">#88cccccc</color>
+    <color name="colorDefaultDivider">#ffd0d0d0</color>
+    <color name="colorDefaultDividerLight">#ffdddddd</color>
+    <color name="colorNotificationProgressBackground">#ffbbbbbb</color>
+    <color name="colorNotificationProgressForeground">#ff508aeb</color>
+
+    <color name="colorLightBlue">#ff508aeb</color>
+    <color name="colorTextTitle">#fffefefe</color>
+    <color name="colorSettingsTextLevel1">#dd333333</color>
+    <color name="colorSettingsTextLevel2">#dd333333</color>
+
+    <color name="colorTextViewStrokeGray">#ff999999</color>
+
+    <color name="colorOrange">#fff5a536</color>
+
+    <color name="vertical_straight_view_bg_normal">#00000000</color>
+    <color name="vertical_straight_view_bg_pressed">#22000000</color>
+    <color name="vertical_straight_view_text_normal">#99888888</color>
+    <color name="vertical_straight_view_text_pressed">#99999999</color>
+
+    <color name="colorBottomNormal">#ffbbbbbb</color>
+    <color name="colorBottomPressed">#ff53b0ff</color>
+
+    <color name="colorBottomPressed2">#ff49a0e8</color>
+
+    <color name="colorBottomBarDivider">#ffa0a0a0</color>
+
+    <color name="colorLightGrayDivider">#ffeeeeee</color>
+    <color name="colorLightGrayText">#ffaaaaaa</color>
+    <color name="colorNormalGrayText">#ff888888</color>
+    <color name="colorDarkGrayText">#ff555555</color>
+
+    <color name="colorInputEditTextColor">#ff555555</color>
+    <color name="colorInputEditHintColor">#ffdfdfdf</color>
+
+    <color name="colorBikeTextMessage">#fff05947</color>
+
+    <color name="colorTagTvNormal">#fffff4ee</color>
+
+    <color name="colorBtnNormal">#ff53b0ff</color>
+    <color name="colorBtnPressed">#ff4aaaf3</color>
+    <color name="colorTransWhiteNormal">#11ffffff</color>
+    <color name="colorTransWhitePressed">#22ffffff</color>
+
+    <color name="colorSignBgNormal">#ffacd3f4</color>
+    <color name="colorSignBgPressed">#ff99d0f0</color>
+
+    <color name="colorBtnDisable">#ffe2e2e2</color>
+
+
+    <color name="colorCenterDark">#ff555555</color>
+    <color name="colorCenterLight">#ff888888</color>
+    <color name="colorCenterDivider">#ffeeeeee</color>
+
+    <color name="colorTextFeedbackUnselected">#ff666666</color>
+    <color name="colorTextFeedbackSelected">#ffffffff</color>
+
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="purple">#865aff</color>
+    <color name="lightBlack">#ff555555</color>
+    <color name="lightBlack2">#ff666666</color>
+
+    <color name="colorButtonEd2kNormal">#9a59b5</color>
+    <color name="colorButtonEd2kPressed">#8d44ad</color>
+    <color name="colorButtonThunderNormal">#3598db</color>
+    <color name="colorButtonThunderPressed">#297fb8</color>
+    <color name="colorButtonMagnetNormal">#34495e</color>
+    <color name="colorButtonMagnetPressed">#2d3e50</color>
+    <color name="colorButtonTorrentNormal">#e67f22</color>
+    <color name="colorButtonTorrentPressed">#d25400</color>
+    <color name="colorButtonFileLengthNormal">#1ABC9C</color>
+    <color name="colorButtonFileLengthPressed">#16A085</color>
+    <color name="colorButtonFeedbackNormal">#ff4433</color>
+    <color name="colorButtonFeedbackPressed">#ee3322</color>
+    <color name="colorButtonFeedbackDisable">#BDC3C7</color>
+    <color name="colorEdittextBg">#66f5f5f5</color>
+    <color name="colorEdittextStroke">#66eeeeee</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteLight">#fff5f5f5</color>
+    <color name="yellow">#FFFFE400</color>
+    <color name="pink_red">#F63E2A</color>
+    <color name="red">#FF0000</color>
+    <color name="bulegray">#f0f0f0</color>
+    <color name="gray">#828282</color>
+    <color name="graylight">#cccccc</color>
+    <color name="orange">#FF6600</color>
+    <color name="orange_light">#fdaa0b</color>
+    <color name="dialog_ok">#53b0fe</color>
+    <color name="gold">#ffd700</color>
+    <color name="transparent">#00000000</color>
+    <color name="semitransparent">#90000000</color>
+    <color name="nearly_hard">#97000000</color>
+    <color name="font_focus">#D7F679</color>
+    <color name="gold_player">#F7F466</color>
+    <color name="whitetran">#87FFFFFF</color>
+    <color name="divider_line">#FF575757</color>
+
+    <color name="listview_item_normal">#eef0ed</color>
+    <color name="listview_item_pressed">#d4d4d4</color>
+
+    <color name="message_checked">#90918f</color>
+    <color name="message_no_check">#323232</color>
+
+    <color name="stick_color_bg">#e2e2e2</color>
+
+    <color name="blue_gradient_light">#53b0fe</color>
+
+    <color name="blue_gradient_dark">#0488f7</color>
+    <color name="work_golden_color">#f58144</color>
+    <color name="work_normal_color">#888888</color>
+
+    <color name="md_dialog_green_light">#ff4bd1c8</color>
+    <color name="md_dialog_green_dark">#ff2ca99f</color>
+    <color name="md_dialog_gray_dark">#99666666</color>
+    <color name="md_dialog_trans">#00000000</color>
+    <color name="md_dialog_divider_dark">#66999999</color>
+    <color name="md_dialog_divider_light">#44999999</color>
+    <color name="md_dialog_black_light">#aa111111</color>
 </resources>

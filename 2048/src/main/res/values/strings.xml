@@ -14,4 +14,8 @@
     <string name="continue_game">Cancel</string>
     <string name="reset_dialog_title">Reset game?</string>
     <string name="reset_dialog_message">Are you sure you wish to reset the game?</string>
+
+    <string name="app_name">2048</string>
+    <string name="app_name_test">2048-测试</string>
+    <string name="header">2048</string>
 </resources>
