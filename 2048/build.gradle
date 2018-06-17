@@ -6,12 +6,16 @@ android {
     compileSdkVersion 27
     buildToolsVersion '26.0.2'
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 22
+        applicationId "cn.carbs.a2048"
+        minSdkVersion 15
+        targetSdkVersion 26
         versionCode 20
         versionName "2.0.0"
-        applicationId "cn.carbs.a2048"
     }
 
     signingConfigs {
@@ -36,7 +40,7 @@ android {
         release {
             buildConfigField "String", "Build_Version_Time", "\"" + buildTime() + "\""
             buildConfigField "boolean", "Formal", "" + rootProject.ext.Formal + ""
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.releaseConfig
             if (rootProject.ext.Formal) {
@@ -84,4 +88,5 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
 }
